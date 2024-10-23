@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: "DynaPuff", system-ui;
+}
+
+body {
+  background-color: rgb(18, 40, 17);
+  font-weight: 500;
+  font-size: 2rem;
+}
+body .game-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+body .game-section .scores {
+  margin-bottom: 1rem;
+  color: white;
+}
+body .game-section canvas {
+  background-color: rgb(2, 27, 0);
+  border: 5px solid rgb(230, 173, 176);
+}
+body .game-section button {
+  width: 5rem;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}/*# sourceMappingURL=style.css.map */

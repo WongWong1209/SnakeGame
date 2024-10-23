@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <section class="game-section">
+        <div class="scores">
+            <div class="peak">
+                <i class="fa-solid fa-trophy"></i>
+                Peak Score: 0
+            </div>
+            <div class="current">
+                <i class="fa-solid fa-star"></i>
+                Current Score: 0
+            </div>
+        </div>
+
+        <canvas id="panel" width="400" height="400"></canvas>
+
+        <button type="button" id="pause" onclick="pause()">Pause</button>
+        <button type="button" id="start" onclick="location.reload()">New Game</button>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
