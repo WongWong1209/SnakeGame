@@ -61,7 +61,6 @@ let fruit = new Fruit();
 initSnake();
 function draw() {
     checkHitSelf();
-    fruit.checkEaten();
     drawBackground();
 
     for (let i = 0; i < snake.length; i++) {
@@ -73,10 +72,9 @@ function draw() {
 
         ctx.fillRect(snake[i].x, snake[i].y, unit, unit);
         ctx.strokeRect(snake[i].x, snake[i].y, unit, unit)
-
-        fruit.drawFruit();
     }
-
+    fruit.drawFruit();
+    fruit.checkEaten();
     move();
 }
 
