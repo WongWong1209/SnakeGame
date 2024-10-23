@@ -62,6 +62,7 @@ initSnake();
 function draw() {
     checkHitSelf();
     drawBackground();
+    fruit.drawFruit();
 
     for (let i = 0; i < snake.length; i++) {
         if (i == 0) ctx.fillStyle = "lightgreen";
@@ -73,7 +74,7 @@ function draw() {
         ctx.fillRect(snake[i].x, snake[i].y, unit, unit);
         ctx.strokeRect(snake[i].x, snake[i].y, unit, unit)
     }
-    fruit.drawFruit();
+    
     fruit.checkEaten();
     move();
 }
