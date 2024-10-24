@@ -4,7 +4,9 @@ You can play this game [HERE](https://wongwong1209.github.io/SnakeGame/).
 
 ## Functions
 (✔️: Finish, ✖️: In Process)
+
 ✔️ Go through wall.
+
 ✔️ Direction buttons UI on phone.
 
 ## Screenshot of This Game
