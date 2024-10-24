@@ -80,7 +80,11 @@ function draw() {
 }
 
 window.addEventListener("keydown", e => {
-    switch (e.key) {
+    changeDir(e.key);
+});
+
+function changeDir(key) {
+    switch (key) {
         case 'w':
         case "ArrowUp":
             if (dir != 2) dir = 0;
@@ -98,7 +102,7 @@ window.addEventListener("keydown", e => {
             if (dir != 3) dir = 1;
             break;
     }
-});
+}
 
 function checkThroughWall(i) {
     if (snake[i].x > 380) snake[i].x = 0;

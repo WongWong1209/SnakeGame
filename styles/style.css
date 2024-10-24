@@ -25,12 +25,32 @@ body .game-section .scores {
   color: white;
 }
 body .game-section canvas {
+  max-width: 95vw;
   background-color: rgb(2, 27, 0);
   border: 5px solid rgb(230, 173, 176);
 }
-body .game-section button {
+body .game-section .arrowBtnArea {
+  display: none;
+}
+body .game-section #start {
   width: 5rem;
   height: 3rem;
   margin-top: 2rem;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+  body .game-section .arrowBtnArea {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 2rem;
+  }
+  body .game-section .arrowBtnArea .arrowBtns {
+    color: white;
+  }
+  body .game-section .arrowBtnArea .arrowBtns button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
