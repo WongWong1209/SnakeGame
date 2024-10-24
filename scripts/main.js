@@ -1,6 +1,6 @@
 let canvas = document.getElementById("panel");
 let ctx = canvas.getContext("2d");
-let unit = 20, drawTime = 100;
+let unit = 20, drawTime = 130;
 let row = 400 / unit, col = 400 / unit;
 let snake = [];
 let dir = 1; //0:up, 1:right, 2:down, 3:left
